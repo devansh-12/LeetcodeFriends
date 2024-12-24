@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "LeetCode Friends",
+    "version": "1.0",
+    "description": "A Firefox extension to manage and connect with friends on LeetCode.",
+    "author": "Your Name",
+    "icons": {
+      "48": "src/assets/icons/icon-48.png",
+      "96": "src/assets/icons/icon-96.png"
+    },
+    "browser_action": {
+      "default_popup": "src/popup/LoginPage/login.html",
+      "default_icon": "src/assets/icons/icon-48.png"
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "http://*/",
+      "https://*/"
+    ],
+    "background": {
+      "scripts": ["server/index.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": [
+      "src/assets/images/*",
+      "src/assets/icons/*"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+  }
+  
