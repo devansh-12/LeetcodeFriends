@@ -8,7 +8,7 @@
 ## Tech Stack
 
 - **Express.js**
-- **GraphQL/Neo4j**
+- **Neo4j**
 - **Javascript**
 - **TailwindCSS/Bootstrap**
 
